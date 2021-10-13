@@ -3242,7 +3242,7 @@ router.get('/ytmp4', async (req, res, next) => {
 router.get('/joox', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             w
-            q = req.query.url
+            q = req.query.q
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
@@ -3251,7 +3251,7 @@ router.get('/joox', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.result.data;
              res.json({
              	author: 'IlhanSykes',
                  result
