@@ -3234,7 +3234,6 @@ router.get('/ytmp4', async (req, res, next) => {
         var result = data;
              res.json({
              	author: 'IlhanSykes',
-                 result
              })
          })
          .catch(e => {
