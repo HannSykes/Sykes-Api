@@ -3225,7 +3225,7 @@ router.get('/ytmp4', async (req, res, next) => {
             url = req.query.url
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://api.zeks.me/api/ytmp3?apikey=apivinz&url=${url}`))
+       fetch(encodeURI(`https://api.zeks.me/api/ytmp4?apikey=apivinz&url=${url}`))
         .then(response => response.json())
         .then(data => {
         var result = data.result;
