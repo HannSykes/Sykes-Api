@@ -3241,13 +3241,14 @@ router.get('/ytmp4', async (req, res, next) => {
 
 router.get('/joox', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
-            url = req.query.url
+            w
+            q = req.query.url
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+    if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
 
-       fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${url}`))
+       fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
