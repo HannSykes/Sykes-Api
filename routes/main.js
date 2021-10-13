@@ -11,7 +11,7 @@ router.get('/api', (req, res) => {
     res.sendFile(__path + '/views/index.html')
 })
 
-router.get('/api/about', (req, res) => {
+router.get('/ilhanecha', (req, res) => {
     res.sendFile(__path + '/views/about.html')
 })
 
