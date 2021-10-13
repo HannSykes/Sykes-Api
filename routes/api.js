@@ -3221,20 +3221,17 @@ router.get('/textmaker/roses', async (req, res, next) => {
 })
 
 router.get('/ytmp4', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
+        var apikeyInput = req.query.apikey
             url = req.query.url
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
-
-       fetch(encodeURI(`https://api.zeks.me/api/ytmp4?apikey=apivinz&url=${url}`))
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://api.zeks.me/api/ytmp3?apikey=apivinz&url=${url}`))
         .then(response => response.json())
         .then(data => {
-        var xnbw = data;
+        var result = data.result;
              res.json({
              	author: 'IlhanSykes',
-             	xnbw
+                 result
              })
          })
          .catch(e => {
