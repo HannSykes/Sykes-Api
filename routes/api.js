@@ -3251,7 +3251,7 @@ router.get('/joox', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data.result;
+        var result = data;
              res.json({
              	author: 'IlhanSykes',
                  result
