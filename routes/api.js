@@ -3220,7 +3220,7 @@ router.get('/textmaker/roses', async (req, res, next) => {
         }
 })
 
-router.get('/yutub/video', async (req, res, next) => {
+router.get('/ytmp4', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             url = req.query.url
             
@@ -3469,7 +3469,7 @@ router.get('/play/mp3', async (req, res, next) => {
 })
 })
 
-router.get('/ytdownn', async (req, res, next) => {
+router.get('/ytmp3', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             url = req.query.url
 	if(!apikeyInput) return res.json(loghandler.notparam)	
