@@ -3231,9 +3231,10 @@ router.get('/ytmp4', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/ytmp4?apikey=apivinz&url=${url}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var xnbw = data;
              res.json({
              	author: 'IlhanSykes',
+             	xnbw
              })
          })
          .catch(e => {
