@@ -3309,19 +3309,16 @@ router.get('/playvid', async (req, res, next) => {
 })
 
 router.get('/darkjokes', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            url = req.query.url
+        var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
-       fetch(encodeURI(`https://api.zeks.me/api/ytplaymp3?apikey=apivinz&q=${q}`))
+       fetch(encodeURI(`https://api.zeks.me/api/darkjokes?apikey=apivinz`))
         .then(response => response.json())
         .then(data => {
         var result = data;
              res.json({
-             	author: 'IlhanSykes',
                  result
              })
          })
@@ -3331,19 +3328,16 @@ router.get('/darkjokes', async (req, res, next) => {
 })
 
 router.get('/meme', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            url = req.query.url
+        var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
        fetch(encodeURI(`https://api.zeks.me/api/memeindo?apikey=apivinz`))
         .then(response => response.json())
         .then(data => {
         var result = data;
              res.json({
-             	author: 'IlhanSykes',
                  result
              })
          })
@@ -3351,7 +3345,6 @@ router.get('/meme', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 })
-
 
 router.get('/yutub/audio', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
