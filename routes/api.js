@@ -3319,7 +3319,7 @@ router.get('/darkjokes', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-                 result
+                 darkjokes
              })
          })
          .catch(e => {
@@ -3338,7 +3338,7 @@ router.get('/meme', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-                 result
+                 meme
              })
          })
          .catch(e => {
