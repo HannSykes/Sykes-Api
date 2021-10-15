@@ -3271,10 +3271,10 @@ router.get('/play', async (req, res, next) => {
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
     if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
 
-       fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${q}`))
+       fetch(encodeURI(`https://api.zeks.me/api/ytplaymp3?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.result;
              res.json({
              	author: 'IlhanSykes',
                  result
@@ -3297,7 +3297,7 @@ router.get('/playvid', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/ytplaymp4?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.result;
              res.json({
              	author: 'IlhanSykes',
                  result
