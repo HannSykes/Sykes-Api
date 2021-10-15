@@ -3317,7 +3317,7 @@ router.get('/darkjokes', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/darkjokes?apikey=apivinz`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var darkjokes = data;
              res.json({
                  darkjokes
              })
@@ -3336,7 +3336,7 @@ router.get('/meme', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/memeindo?apikey=apivinz`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var meme = data;
              res.json({
                  meme
              })
@@ -3944,7 +3944,7 @@ router.get('/maker/special/transformer', async (req, res, next) => {
 })
 
 
-router.get('/maker/special/epep', async (req, res, next) => {
+router.get('/maker/epep', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             text = req.query.text
             
