@@ -3262,6 +3262,52 @@ router.get('/joox', async (req, res, next) => {
 })
 })
 
+router.get('/play', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            w
+            q = req.query.q
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
+    if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
+
+       fetch(encodeURI(`https://api.zeks.me/api/joox?apikey=apivinz&q=${q}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/playvid', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            w
+            q = req.query.q
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
+    if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
+
+       fetch(encodeURI(`https://api.zeks.me/api/ytplaymp4?apikey=apivinz&q=${q}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 router.get('/darkjokes', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             url = req.query.url
@@ -3270,7 +3316,7 @@ router.get('/darkjokes', async (req, res, next) => {
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
     if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
-       fetch(encodeURI(`https://api.zeks.me/api/darkjokes?apikey=apivinz`))
+       fetch(encodeURI(`https://api.zeks.me/api/ytplaymp3?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
