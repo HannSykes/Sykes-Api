@@ -3262,6 +3262,52 @@ router.get('/joox', async (req, res, next) => {
 })
 })
 
+router.get('/stikerwa', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            w
+            q = req.query.q
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
+    if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
+
+       fetch(encodeURI(`https://api.zeks.me/api/searchsticker?apikey=apivinz&q=${q}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/nulis', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            w
+            q = req.query.q
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
+    if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
+
+       fetch(encodeURI(`https://api.zeks.me/api/nulis?apikey=apivinz&text=${q}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 router.get('/play', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             w
