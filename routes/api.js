@@ -3265,13 +3265,13 @@ router.get('/joox', async (req, res, next) => {
 router.get('/simi', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             w
-            teks = req.query.teks
+            q = req.query.q
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
     if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
 
-       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${teks}&lc=id`))
+       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${q}&lc=id`))
         .then(response => response.json())
         .then(data => {
         var result = data;
