@@ -3297,10 +3297,10 @@ router.get('/artinama', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/artinama?apikey=apivinz&nama=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var ilhansykes = data;
              res.json({
              	author: 'IlhanSykes',
-                 result
+                 ilhansykes
              })
          })
          .catch(e => {
@@ -3320,7 +3320,7 @@ router.get('/artimimpi', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/artimimpi?apikey=apivinz&q=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.result;
              res.json({
              	author: 'IlhanSykes',
                  result
