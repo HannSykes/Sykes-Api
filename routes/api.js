@@ -3343,7 +3343,7 @@ router.get('/jadwalsholat', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/jadwalsholat?apikey=apivinz&daerah=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.data;
              res.json({
              	author: 'IlhanSykes',
                  result
@@ -3363,9 +3363,9 @@ router.get('/pantun', async (req, res, next) => {
        fetch(encodeURI(`https://api.zeks.me/api/pantun?apikey=apivinz`))
         .then(response => response.json())
         .then(data => {
-        var meme = data.result;
+        var result = data.result;
              res.json({
-                 meme
+                 result
              })
          })
          .catch(e => {
