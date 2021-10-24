@@ -3258,15 +3258,15 @@ router.get('/stikerwa', async (req, res, next) => {
 })
 })
 
-router.get('/ttstalk', async (req, res, next) => {
+router.get('/igstalk', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             q = req.query.q
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://velgrynd.herokuapp.com/api/stalktiktok?username=${q}`))
+       fetch(encodeURI(`https://hardianto-chan.herokuapp.com/api/igstalk?username=${q}&apikey=hardianto`))
         .then(response => response.json())
         .then(data => {
-        var result = data.result.user;
+        var result = data;
              res.json({
              	author: 'IlhanSykes',
                  result
