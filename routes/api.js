@@ -3266,7 +3266,7 @@ router.get('/ttstalk', async (req, res, next) => {
        fetch(encodeURI(`https://velgrynd.herokuapp.com/api/stalktiktok?username=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data.result;
+        var result = data.result.user;
              res.json({
              	author: 'IlhanSykes',
                  result
