@@ -3260,13 +3260,13 @@ router.get('/stikerwa', async (req, res, next) => {
 
 router.get('/tiktokk', async (req, res, next) => {
         var apikeyInput = req.query.apikey
-            q = req.query.q
+            url = req.query.url
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://velgrynd.herokuapp.com/api/tiktok2?url=${q}`))
+       fetch(encodeURI(`https://hadi-api.herokuapp.com/api/tiktok?url=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.result;
              res.json({
              	author: 'IlhanSykes',
                  result
