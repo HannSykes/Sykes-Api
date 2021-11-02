@@ -3266,7 +3266,7 @@ router.get('/tiktokk', async (req, res, next) => {
        fetch(encodeURI(`https://velgrynd.herokuapp.com/api/tiktok2?url=${q}`))
         .then(response => response.json())
         .then(data => {
-        var result = data.result;
+        var result = data;
              res.json({
              	author: 'IlhanSykes',
                  result
