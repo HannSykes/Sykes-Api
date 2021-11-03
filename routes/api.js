@@ -3329,7 +3329,7 @@ router.get('/simi', async (req, res, next) => {
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
     if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
 
-       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${q}&lc=id`))
+       fetch(encodeURI(`https://api-sv2.simsimi.net/v2/?text=${q}&lc=id&cf=false`))
         .then(response => response.json())
         .then(data => {
         var result = data;
