@@ -3784,6 +3784,44 @@ router.get('/ytmp3', async (req, res, next) => {
 })
 })
 
+router.get('/ytmp32', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            url = req.query.url
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://hadi-api.herokuapp.com/api/yt2/audio?url=${url}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/ytmp42', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            url = req.query.url
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://hadi-api.herokuapp.com/api/yt2/video?url=${url}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 router.get('/ytsearch', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             text = req.query.text
