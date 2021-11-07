@@ -28,6 +28,7 @@ var { pinterest } = require('../lib/pinterest.js')
 var { TiktokDownloader } = require('../lib/tiktokdl.js')
 var { igDownloader } = require('../lib/igdown.js')
 var { lirikLagu } = require('../lib/lirik.js')
+var { ilhanup } = require('../lib/infoupdate.js')
 var { mediafireDl } = require('../lib/mediafire.js')
 var options = require(__path + '/lib/options.js');
 var {
@@ -495,14 +496,13 @@ router.get('/asupan', async (req, res, next) => {
 })
 })
 
-router.get('/infoupdate', async (req, res, next) => {
-        var apikeyInput = req.query.apikey
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+router.get('/infouodate', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/SykesBotWA/master/IlhanSykes/infoupdate.js`))
-        .then(response => response.json())
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
+
+       ilhanup(prefix)
         .then(data => {
         var result = data;
              res.json({
