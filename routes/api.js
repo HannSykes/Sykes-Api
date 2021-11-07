@@ -502,7 +502,7 @@ router.get('/infouodate', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'hannsykes11') return res.sendFile(__path + '/views/eror.html')
 
-       ilhanup(prefix)
+       ilhanup(ilhanup(prefix))
         .then(data => {
         var result = data;
              res.json({
