@@ -23,7 +23,7 @@ router.get('/config', (req, res) => {
     config = {
         status: true,
         result: {
-            ilhansykes : '⚡ *SYKES BOT UPDATE* ⚡
+            ilhansykes : `⚡ *SYKES BOT UPDATE* ⚡
 ```Version : 7.0 beta```
 ```Update Date : Monday, 10 Oktober 2021 | 23:00 WIB```
 ```Total Features : 265 ```
@@ -66,7 +66,7 @@ Contoh :
 
 Arigathanks :))
 
-~ HannSykes',
+~ HannSykes`,
             youtube : 'HannSykes'
         }
     }
