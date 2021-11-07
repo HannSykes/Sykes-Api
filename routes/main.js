@@ -19,7 +19,7 @@ router.get('/api/ilhanechaaaaa', (req, res) => {
     res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
 })
 
-router.get('/infoupdatesykes', (req, res) => {
+router.get('/config', (req, res) => {
     config = {
         status: true,
         result: {
