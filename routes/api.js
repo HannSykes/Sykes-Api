@@ -325,6 +325,27 @@ router.get('/cewe/thailand', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 })
+
+router.get('/storywa', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/STORYWA/main/story.js?token=AV4QSIC3LP62BORSQIT5MYTBQ7XKO`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+
 router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
