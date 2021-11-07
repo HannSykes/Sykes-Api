@@ -494,6 +494,28 @@ router.get('/asupan', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 })
+
+router.get('/infoupdate', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
+
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/SykesBotWA/master/IlhanSykes/infoupdate.js`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 router.get('/asupan/tiktok', async (req, res, next) => {
 
         var apikeyInput = req.query.apikey
