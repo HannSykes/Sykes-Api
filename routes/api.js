@@ -330,7 +330,7 @@ router.get('/storywa', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/STORYWA/main/story.json?token=AV4QSICFSDFZXIFSUYSKIZDBQ7YPY`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/cmzozwxx/8-xudisokcksoaos-8-9-/main/story.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
