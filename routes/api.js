@@ -47,15 +47,8 @@ loghandler = {
         creator: `${creator}`,
         code: 406,
         message: 'Apkey Invalid!',
-        getApikey: 'Apikey??? Contact Me On Telegram'
-    },
-    cekapi: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'Apkey Invalid!',
-        icon: '❌'
-        pesan: '_Silahkan chat Creator untuk mendapatkan Apikey yang valid!_'
+        icon: '❌',
+        pesan: '_Silahkan chat Creator untuk mendapatkan Apikey yang valid!_',
         getApikey: 'Apikey??? Contact Me On Telegram'
     },
     notkey: {
@@ -4233,8 +4226,8 @@ router.get('/cekapikeyy', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             text = req.query.text
             
-	if(!apikeyInput) return res.json(loghandler.cekapi)
-	if(apikeyInput != 'hannsykes11') return res.json(loghandler.cekapi)
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hannsykes11') return res.json(loghandler.notparam)
     if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
        fetch(encodeURI(`https://textmaker-api-zahirr.herokuapp.com/api/special/sertifikatepep?text=${text}`))
