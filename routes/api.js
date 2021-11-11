@@ -4238,8 +4238,8 @@ router.get('/cekapikeyy', async (req, res, next) => {
              	author: 'IlhanSykes',
         code: 406,
         message: 'Apkey Valid!',
-        icon: '✅'
-        pesan: '_Selamat Apikey mu saat ini masih valid!_'
+        icon: '✅',
+        pesan: '_Selamat Apikey mu saat ini masih valid!_',
         getApikey: 'Apikey??? Contact Me On Telegram',
                  result
              })
