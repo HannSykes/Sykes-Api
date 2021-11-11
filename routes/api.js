@@ -49,6 +49,15 @@ loghandler = {
         message: 'Apkey Invalid!',
         getApikey: 'Apikey??? Contact Me On Telegram'
     },
+    cekapi: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'Apkey Invalid!',
+        icon: '❌'
+        pesan: '_Silahkan chat Creator untuk mendapatkan Apikey yang valid!_'
+        getApikey: 'Apikey??? Contact Me On Telegram'
+    },
     notkey: {
         status: false,
         creator: `${creator}`,
@@ -4212,6 +4221,33 @@ router.get('/maker/epep', async (req, res, next) => {
         var result = data;
              res.json({
              	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/cekapikeyy', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            text = req.query.text
+            
+	if(!apikeyInput) return res.json(loghandler.cekapi)
+	if(apikeyInput != 'hannsykes11') return res.json(loghandler.cekapi)
+    if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://textmaker-api-zahirr.herokuapp.com/api/special/sertifikatepep?text=${text}`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'IlhanSykes',
+        code: 406,
+        message: 'Apkey Valid!',
+        icon: '✅'
+        pesan: '_Selamat Apikey mu saat ini masih valid!_'
+        getApikey: 'Apikey??? Contact Me On Telegram',
                  result
              })
          })
