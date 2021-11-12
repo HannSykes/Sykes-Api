@@ -47,7 +47,7 @@ loghandler = {
         creator: `${creator}`,
         code: 406,
         thumb: 'https://g.top4top.io/p_2142fh2jw0.png',
-        message: 'Apkey Invalid!',
+        message: 'Apikey Invalid!',
         icon: '❌',
         pesan: '_Silahkan chat Creator untuk mendapatkan Apikey yang valid!_',
         getApikey: 'Apikey??? Contact Me On Telegram'
@@ -4238,7 +4238,7 @@ router.get('/cekapikeyy', async (req, res, next) => {
              res.json({
              	author: 'IlhanSykes',
         code: 406,
-        message: 'Apkey Valid!',
+        message: 'Apikey Valid!',
         thumb: 'https://g.top4top.io/p_2142fh2jw0.png',
         icon: '✅',
         pesan: '_Selamat Apikey mu saat ini masih valid!_',
