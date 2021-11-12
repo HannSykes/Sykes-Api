@@ -483,7 +483,7 @@ router.get('/asupan', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'hannsykes11')  return res.sendFile(__path + '/views/eror.html')
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan.js`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/HannSykes/main/ilhan.js`))
         .then(response => response.json())
         .then(data => {
         var result = data;
