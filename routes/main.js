@@ -27,6 +27,7 @@ router.get('/infoupdate', (req, res) => {
             thumb : 'https://h.top4top.io/p_2142hy6ec0.png',
             message : '────「 *MESSAGE* 」────\n\nSCRIPT BOT INI GRATIS!\n\nScript Bot ini bisa kalian dapatkan di channel youtube HannSykes!\natau kalian bisa langsung klik link dibawah ini.\n\nhttps://m.youtube.com/c/HannSykes\n\n────「 *SYKES BOT V7* 」────',
             youtube : 'HannSykes',
+            req : 'https://my.forms.app/form/618e50598c8fa556a196c420',
             instagram : '@muhmdilhan_'
         }
     }
