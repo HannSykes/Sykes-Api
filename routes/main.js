@@ -33,4 +33,19 @@ router.get('/infoupdate', (req, res) => {
     res.json(config)
 })
 
+router.get('/cekupdate', (req, res) => {
+    configg = {
+        status: true,
+        result: {
+            thumb : 'https://c.top4top.io/p_214399h8y0.png',
+            version : '```7.0 Science```'
+            date : '```13-11-2021```'
+            link : '_Tes.com_'
+            youtube : 'HannSykes',
+            instagram : '@muhmdilhan_'
+        }
+    }
+    res.json(configg)
+})
+
 module.exports = router
