@@ -23,7 +23,7 @@ router.get('/infoupdate', (req, res) => {
     config = {
         status: true,
         result: {
-            ilhansykes : '*_SEDANG DALAM PEMBUATAN CHANGELOG_*',
+            ilhansykes : '⚡ SYKES BOT UPDATE ⚡\nVersion : 7.1 Science\nUpdate Date : Wed, 16 November 2021 | 16:37 WIB\nTotal Features : 218\nError Features : 1\n\n╭─────≽「 WHATS NEW? 」\n┴\n┠≽ [NEW] BAN & UNBAN USER\n┠≽ [NEW] CUSTOM TEXT WELCOME\n┠≽ [NEW] DOWNLOADER V2\n┠≽ [NEW] VOTING GROUP\n┠≽ [NEW] COGAN & CECAN\n┠≽ [NEW] DARKJOKES & MEME V2\n┠≽ [NEW] TOURL\n┠≽ [NEW] REVOKE LINK GROUP\n┠≽ [NEW] LISTVN\n┠≽ [NEW] MENU LOCATION\n┠≽ [NEW] MEME GENERATOR\n┠≽ [NEW] AFK\n┠≽ [NEW] BUG STORY\n┠≽ [NEW] STORYWA\n┠≽ [NEW] ANTI DELETE\n┠≽ [NEW] ISLAM MENU\n┠≽ [NEW] RESTART & SHUTDOWN\n┠≽ [NEW] SEMOJI\n┠≽ [NEW] MAKER MENU\n┠≽ [NEW] GAME MENU\n┠≽ [NEW] STICKER CMD\n┠≽ [NEW] TOAUDIO\n┠≽ [NEW] ANIME MENU\n┠≽ [NEW] ANYMORE.\n┬\n╰────────────────────────\n\n͏͏͏͏͏͏͏͏͏͏͏͏╭─────≽「 INFORMATION 」\n┴\n┠≽ Jika menemukan bug silahkan lapor!\n┠≽ Untuk Sewa BOT silahkan chat owner!\n┬\n╰────────────────────────\n\nCARA LAPOR BUG?\nketik #laporbug [text] atau #report [text]\nContoh :\n#laporbug kak fitur pinterest ga respon!\n\n\n\nArigathanks :))\n~ HannSykes',
             thumb : 'https://h.top4top.io/p_2142hy6ec0.png',
             message : '────「 *MESSAGE* 」────\n\nSCRIPT BOT INI GRATIS!\n\nScript Bot ini bisa kalian dapatkan di channel youtube HannSykes!\natau kalian bisa langsung klik link dibawah ini.\n\nhttps://m.youtube.com/c/HannSykes\n\n────「 *SYKES BOT V7* 」────',
             youtube : 'HannSykes',
