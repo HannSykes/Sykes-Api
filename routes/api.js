@@ -317,8 +317,8 @@ router.get('/randomporn', async (req, res, next) => {
        fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/Hanns.json`))
         .then(response => response.json())
         .then(data => {
-        var ilhansykes = data;
-        var ilhansykes = data[Math.floor(Math.random() * data.length)];
+        var ilhansykes = data.result;
+        var ilhansykes = data.result[Math.floor(Math.random() * data.result.length)];
              res.json({
              	author: 'IlhanSykes',
                  ilhansykes
