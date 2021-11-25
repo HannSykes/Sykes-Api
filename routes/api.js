@@ -314,7 +314,7 @@ router.get('/randomporn', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hansykesx')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/Hanns.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/Hannsz.json`))
         .then(response => response.json())
         .then(data => {
         var ilhansykes = data;
