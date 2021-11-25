@@ -366,6 +366,25 @@ router.get('/storywa', async (req, res, next) => {
 })
 })
 
+router.get('/ttporn', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hansykesx')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/ttpc.js`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	author: 'IlhanSykes',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 
 router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
