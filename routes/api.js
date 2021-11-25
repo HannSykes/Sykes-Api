@@ -310,6 +310,24 @@ router.get('/cewe/vietnam', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 })
+router.get('/randomporn', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'hansykesx')  return res.sendFile(__path + '/views/eror.html')
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/Hanns.json`))
+        .then(response => response.json())
+        .then(data => {
+        var ilhansykes = data;
+        var ilhansykes = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	author: 'IlhanSykes',
+                 ilhansykes
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
