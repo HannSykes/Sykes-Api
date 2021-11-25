@@ -40,8 +40,8 @@ router.get('/cekupdate', (req, res) => {
         status: true,
         result: {
             thumb : 'https://c.top4top.io/p_214399h8y0.png',
-            version : '7.1 Science',
-            date : '16-11-2021',
+            version : '8.0 Science',
+            date : '29-11-2021',
             link : '_https://youtu.be/MtZl9KwUmQc_',
             youtube : 'HannSykes',
             instagram : '@muhmdilhan_'
