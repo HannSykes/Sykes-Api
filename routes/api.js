@@ -318,7 +318,7 @@ router.get('/randomporn', async (req, res, next) => {
         .then(response => response.json())
         .then(data => {
         var ilhansykes = data.result;
-        var ilhansykes = data.result[Math.floor(Math.random() * data.result.length)];
+        var ilhansykes = data[Math.floor(Math.random() * data.length)];
              res.json({
              	author: 'IlhanSykes',
                  ilhansykes
