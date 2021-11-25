@@ -370,7 +370,7 @@ router.get('/ttporn', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'hansykesx')  return res.sendFile(__path + '/views/eror.html')
-       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/ttpc.js`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/HannSykes/Baileys/master/src/WAConnection/ttddd.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
