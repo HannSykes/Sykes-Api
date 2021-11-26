@@ -42,7 +42,8 @@ router.get('/cekupdate', (req, res) => {
             thumb : 'https://c.top4top.io/p_214399h8y0.png',
             version : '8.0 Science',
             date : '29-11-2021',
-            link : '_Comming soon!_',
+            link : '_https://youtu.be/MtZl9KwUmQc_',
+            grupwa : 'https://chat.whatsapp.com/JnJZlnxmTnR5mpDDlbmgKR',
             youtube : 'HannSykes',
             instagram : '@muhmdilhan_'
         }
