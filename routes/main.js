@@ -25,7 +25,7 @@ router.get('/infoupdate', (req, res) => {
         result: {
             ilhansykes : 'SCRIPT BOT INI GRATIS!\n\nScript Bot ini bisa kalian dapatkan di channel youtube HannSykes!\natau kalian bisa langsung klik link dibawah ini.\n\nhttps://m.youtube.com/c/HannSykes',
             thumb : 'https://b.top4top.io/p_2154rv9zm0.png',
-            message : '────「 *MESSAGE* 」────\n\nJika ada fitur yang error silahkan lapor!\n\n────「 *SYKES BOT V8* 」────',
+            message : '────「 *MESSAGE* 」────\n\nJika ada fitur yang error silahkan lapor!\n\n────「 *SYKES BOT V9* 」────',
             youtube : 'HannSykes',
             req: 'https://my.forms.app/form/618e50598c8fa556a196c420',
             reqimg: 'https://f.top4top.io/p_214348q1q0.png',
@@ -40,9 +40,9 @@ router.get('/cekupdate', (req, res) => {
         status: true,
         result: {
             thumb : 'https://c.top4top.io/p_214399h8y0.png',
-            version : '8.0 Science',
-            date : '28-11-2021',
-            link : '_https://youtu.be/w3-DtAc3Cp0_',
+            version : '9.0 Science',
+            date : '30-12-2021',
+            link : '_https://youtu.be/K8AyNFgqk38_',
             grupwa : 'https://chat.whatsapp.com/JnJZlnxmTnR5mpDDlbmgKR',
             youtube : 'HannSykes',
             instagram : '@muhmdilhan_'
