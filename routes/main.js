@@ -41,7 +41,7 @@ router.get('/cekupdate', (req, res) => {
         result: {
             thumb : 'https://c.top4top.io/p_214399h8y0.png',
             version : '9.0 Science',
-            date : '30-12-2021',
+            date : '03-12-2021',
             link : '_https://youtu.be/K8AyNFgqk38_',
             grupwa : 'https://chat.whatsapp.com/JnJZlnxmTnR5mpDDlbmgKR',
             youtube : 'HannSykes',
