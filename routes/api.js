@@ -4268,7 +4268,7 @@ router.get('/cekapikeyy', async (req, res, next) => {
 	if(apikeyInput != 'ohmyhannsyksz') return res.json(loghandler.notparam)
     if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
-       fetch(encodeURI(`https://textmaker-api-zahirr.herokuapp.com/api/special/sertifikatepep?text=${text}`))
+       fetch(encodeURI(`https://api.zeks.me/api/artimimpi?apikey=apivinz&q=rrrr`))
         .then(response => response.json())
         .then(data => {
         var result = data;
