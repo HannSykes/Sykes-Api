@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/api', (req, res) => {
-    res.sendFile(__path + '/views/index.html')
+    res.sendFile(__path + '/views/home.html')
 })
 
 router.get('/api/ilhanechaaaaaaaaa', (req, res) => {
