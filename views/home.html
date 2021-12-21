@@ -1,38 +1,457 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://b.top4top.io/p_2181u64gs2.jpg">
-        <title>HannSykes Rest-APIs</title>
-        <link rel="stylesheet" href="views/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="header_logo">
-                </div>
-                <div class="header_links">
-                    <ul class="nav_links">
-                        <li class="nav_link"><a href="#">Home</a></li>
-                        <li class="nav_link"><a href="https://ilhansykes.herokuapp.com/">Rest Api</a></li>
-                        <li class="nav_link"><a href="https://github.com/HannSykes?tab=repositories">Repository</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="main">
-            <img src="https://b.top4top.io/p_2181u64gs2.jpg" alt="" srcset="">
-            <span>hannsykes.</span>
-            <p>~ still not perfect</p>
-            <ul>
-                <li><a target="_blank" href="https://t.me/HannSykesss"><i class="fab fa-telegram"></i></a></li>
-                <li><a target="_blank" href="https://github.com/HannSykes"><i class="fab fa-github"></i></a></li>
-                <li><a target="_blank" href="https://instagram.com/muhmdilhan_"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </section>
-           <audio autoplay="true" src="https://www.mboxdrive.com/mnva.mp3"></audio>
-    </body>
+
+<html><head>
+
+<title> ILHAN SYKES - API </title>
+
+<meta charset="UTF-8"> 
+
+<meta name="robots" content="all"> 
+
+<meta name="robots schedule" content="auto"> 
+
+<meta name="distribution" content="global"> 
+
+<meta name="googlebot" content="index,follow">
+
+<meta property="og:title" content="ILHAN SYKES - API"/>  
+
+<meta name="description" content="Just a simple and ordinary rest api!"> 
+
+<meta property="og:image" content="https://i.ibb.co/kBJyHMC/ilhan.jpg">
+
+<link rel="shortcut icon" href="https://i.ibb.co/kBJyHMC/ilhan.jpg" />  
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"> </script><br><br><br>
+
+<table height="100%" width="100%">
+
+  <td align="center">
+
+        <div class="time">
+        <span id="locale">WAKTU</span>
+        <br>
+        <span id="jam">00</span> : 
+
+        <span id="menit">00</span> : 
+
+        <span id="detik">00</span> &nbsp;
+
+      </div>
+
+      <div id="sayings">Ucapan</div>
+
+</head>
+
+<audio autoplay="autoplay" hidden="hidden" src="https://d.top4top.io/m_2134lw7xa0.mp3"></audio>
+
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'> 
+
+<script type="text/javascript">
+
+function mischandler(){
+
+return false;
+
+}
+
+function mousehandler(e){
+
+var myevent = (isNS) ? e : event;
+
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+
+if((eventbutton==2)||(eventbutton==3)) return false;
+
+}
+
+document.oncontextmenu = mischandler;
+
+document.onmousedown = mousehandler;
+
+document.onmouseup = mousehandler;
+
+var isCtrl = false;
+
+    document.onkeyup=function(e)
+
+    {
+
+    if(e.which == 17)
+
+    isCtrl=false;
+
+    }
+
+    document.onkeydown=function(e)
+
+    {
+
+    if(e.which == 17)
+
+    isCtrl=true;
+
+    if((e.which == 85) || (e.which == 67) && isCtrl == true)
+
+    {
+
+    return false;
+
+    }
+
+    }
+
+function details() {window.open(""); window.open("");}
+
+</script>
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
+* {
+
+   margin: 0;
+
+   padding: 0;
+
+}
+
+   
+
+   body {
+
+ font-family: 'Cabin', sans-serif;
+
+background: #000000;
+
+background-size: cover;
+
+-webkit-background-size: cover; background-position: center;
+
+width: 100%; height: 100%; }
+
+.blink {
+
+font-family: 'Cabin', sans-serif;
+
+-webkit-animation-name: zeeone;
+
+-webkit-animation-duration: 2s;
+
+-webkit-animation-timing-function: linear;
+
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: zeeone;
+
+-moz-animation-duration: 1s;
+
+-moz-animation-timing-function: linear;
+
+-moz-animation-iteration-count: infinite;
+
+ animation-name: zeeone;
+
+ animation-duration: 1s;
+
+ animation-timing-function: linear;
+
+ animation-iteration-count: infinite;
+
+}
+
+@-moz-keyframes zeeone {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+@-webkit-keyframes zeeone {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+@keyframes zeeone {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+ .text-success {
+
+   color: #fff;
+
+   font-size: 25px;
+
+   font-family: 'Cabin', sans-serif;
+
+ }
+
+ h2 {
+
+ color: black;
+
+  text-shadow: 0px 0px 12px red, -1px 0px red, 0px 1px red, 1px 0px red, 0px -1px red;
+
+ align: center;
+
+ text-size: 7px;
+
+ font-family: 'Cabin', sans-serif;
+
+ }
+
+ .image {
+
+ position: top;
+
+ margin: 0;
+
+ margin-top: 15%;
+
+ }
+
+ .two {
+
+ color: red;
+
+ }
+
+ .one {
+
+ color: white;
+ width: 10px;
+
+ }
+
+ #back  { 
+
+ border-radius: 5px;
+
+ -webkit-filter-box: drop-shadow(0px 1px 0px black);
+
+ -webkit-filter: drop-shadow(0px 0px 7px black); 
+
+ filter: drop-shadow(0px 0px 7px black); 
+
+ }
+
+ p {
+
+ padding: 0;
+
+ padding-bottom: 11%;
+
+ position: center;
+
+ text-align: center;
+
+ font-size: 8vmin;
+
+ letter-spacing: 2px;
+
+ background: linear-gradient(90deg, #000, #fff, red, #000);
+
+ background-size: 85% 100%;
+
+ background-repeat: no-repeat;
+
+ background-clip: text;
+
+ -webkit-background-clip: text;
+
+ -webkit-text-fill-color: transparent;
+
+ animation: ONE 5s linear infinite;
+
+ }
+ 
+ .ml2 {
+  font-weight: 900;
+  font-size: 1.0em;
+  color: #00B8D4;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+ @keyframes ONE {
+
+ 0% {
+
+ background-position-x: -500%;
+
+ }
+
+ 
+
+ 100% {
+
+ background-position-x: 500%;
+
+ }
+
+ }
+
+#jam, #menit, #detik { 
+
+  color: #fff;
+
+  font-size: 50px;
+
+}
+
+#locale {
+
+  color: #00B8D4;
+
+  font-size: 50px;
+
+}
+
+#one {
+
+  color: #fff;
+
+  font-size: 30px;
+
+}
+#uwu {
+
+  color: #00B8D4;
+
+  font-size: 30px;
+
+}
+.yuzz {
+    border-radius: 10px;
+    box-shadow:2px 2px 5px black;
+}
+
+</style>
+
+<center>
+
+<img class="image hannsykes" src="https://h.top4top.io/p_2156mo3vp0.png" width="709"><br><br><br>
+
+<div>
+
+<div><font size="20">
+
+<b>
+
+  <h1 class="ml2">STATUS ONLINE</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  </b
+
+</font>
+
+</div>
+
+</div>
+
+<a id="one" href="https://m.youtube.com/c/HannSykes">Made With ❤️ HannSykes</a>
+
+<script type="text/javascript">
+
+Sayings = "";
+
+			var now = new Date();			var hours = now.getHours();
+
+			if (hours >= 17 && hours <= 18){
+
+			Sayings += "<span class='text-success'>Selamat Menunaikan Shalat Maghrib</span>"
+
+			} else if (hours >= 19 || hours <= 2){
+
+			Sayings += "<span class='text-success'>Selamat Malam</span>"
+
+			} else if (hours >= 3 && hours <= 10){
+
+			Sayings += "<span class='text-success'>Selamat Pagi</span>"
+
+			} else if (hours >= 11 && hours <= 14){
+
+			Sayings += "<span class='text-success'>Selamat Siang</span>"
+
+			} else if (hours >= 13 && hours <= 15){
+
+			Sayings += "<span class='text-success'>Selamat Sore</span>"
+
+			}
+
+document.getElementById("sayings").innerHTML = Sayings 
+window.setTimeout("waktu()", 1000);
+
+ 
+
+	function waktu() {
+
+		var waktu = new Date();
+
+		setTimeout("waktu()", 1000);
+
+		document.getElementById("jam").innerHTML = waktu.getHours();
+
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+
+	}
+	
+	var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+    </script>
+
+   <audio autoplay="true" src="https://www.mboxdrive.com/mnva.mp3"></audio>
+<br><br><br><br><br><br><br>
+    <div class="logo">
+<a style="color:white"href="https://t.me/hannsykesss">
+<i class="fa fa-telegram"></i> Telegram
+</a>
+
+   </body>
+
+</td>
+
+</table>
+
 </html>
