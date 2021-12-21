@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     res.redirect('http://ilhansykes.6te.net/')
 })
 
-router.get('/api', (req, res) => {
+router.get('/hannsykes', (req, res) => {
     res.sendFile(__path + '/views/home.html')
 })
 
