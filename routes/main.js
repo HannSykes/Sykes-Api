@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.redirect('https://hannsykes.github.io/IlhanSykes/')
+    res.redirect('http://ilhansykes.6te.net/')
 })
 
 router.get('/api', (req, res) => {
