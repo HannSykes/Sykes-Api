@@ -3392,7 +3392,7 @@ router.get('/simi', async (req, res, next) => {
 	if(apikeyInput != 'ohmyhannsyksz') return res.sendFile(__path + '/views/eror.html')
     if (!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter"})
 
-       fetch(encodeURI(`https://simsimi.info/api/?text=${q}&lc=id`))
+       fetch(encodeURI(`https://simsimi.fun/api/v2/?mode=talk&lang=id&message={q}&filter=false`))
         .then(response => response.json())
         .then(data => {
         var result = data;
